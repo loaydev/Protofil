@@ -1,0 +1,76 @@
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0c255f, #6a11cb, #01050e);
+    background-size: 300% 300%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  .animate__fadeInDown {
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .animate__bounce {
+    animation: bounce 2s infinite;
+  }
+
+.animate-delay {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 2s forwards; 
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-zoom {
+  opacity: 0;
+  animation: zoomIn 1s ease-in-out 1.5s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); 
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide {
+  opacity: 0;
+  animation: slideInLeft 1s ease-in-out 2s forwards;
+}
+
+.animate-slidel {
+  opacity: 0;
+  animation: slideInLeft 2s ease-in-out 3.5s forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
